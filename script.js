@@ -1,5 +1,8 @@
 //your JS code here. If required.
+document.addEventListener("DOMContentLoaded", () => {
 const output = document.getElementById("output");
+  const errorDiv = document.getElementById("error");
+  const loadingDiv = document.getElementById("loading");
 const btn = document.getElementById("download-images-button");
 
 const images = [
@@ -33,3 +36,4 @@ const images = [
   }
 
   btn.addEventListener("click", downloadImages);
+	});
